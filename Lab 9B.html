@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .road{
+        height: 275px;
+        margin-left: 85px;
+        margin-right: 85px;
+       background-image: url(https://static.vecteezy.com/system/resources/thumbnails/023/986/382/small/horizontal-view-of-asphalt-road-in-thailand-background-empty-land-and-side-eucalyptus-forest-under-the-blue-sky-free-photo.jpg);
+       background-repeat: no-repeat;
+       background-size: 1530px 205px;
+       }
+       .fly{
+        height: 100px;
+        width: 100px;
+        animation-name: mydemo;
+        animation-duration: 8s;
+        animation-timing-function: ease-in;
+        position: relative;
+
+       }
+       @keyframes mydemo{
+        from{
+           top : 185px;
+           left: 5px;
+           
+        }
+
+        to{
+         top : 0px;
+         left: 1200px;
+        }
+       }
+       
+    </style>
+</head>
+
+<body>
+    <div class="fly">
+      <img src="https://png.pngtree.com/element_pic/16/11/20/d410c76983dca402484fe64df720606d.png"  style="height: 85px; width: 85px; margin-top: 2px;"></img>
+    </div>
+
+   <div class="road">
+
+   </div>
+</body>
+</html>

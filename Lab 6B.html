@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .header {
+        width: 55%;
+        height: 75%;
+    }
+
+    .navigation {
+        float: right;
+        font-size: larger;
+
+    }
+
+    .table {
+        width: 15%;
+        height: 415px;
+        background-color: red;
+        float: left;
+        font-size: larger;
+    }
+
+    .main {
+        width: 85%;
+        height: 450px;
+    }
+
+    .first {
+        display: inline;
+        float: left;
+        font-size: xx-small;
+        width: 90px;
+
+    }
+
+    .second {
+        display: inline;
+        font-size: xx-small;
+        float: left;
+        width: 90px;
+    }
+
+    .three {
+        float: left;
+        display: inline;
+        width: 90px;
+    }
+
+    .four {
+        float: left;
+        display: inline;
+        width: 90px;
+    }
+
+    .five {
+        float: left;
+        display: inline;
+        width: 90px;
+    }
+
+    .six {
+        float: left;
+        display: inline;
+        width: 90px;
+    }
+
+    .seven {
+        float: left;
+        display: inline;
+        width: 90px;
+    }
+
+
+
+
+    .New {
+        height: 75%;
+        font-size: xx-small;
+        height: 340px;
+    }
+
+    .Footer {
+        color: white;
+        background-color: blue;
+        height: 35px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <img src="data:image/png;base64,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"
+            style="height: 145px"></img>
+        <div class="navigation">Home About Contact Login</div>
+    </div><br><br>
+    <div class="table">
+        Sidebar<br>
+        <hr>Home<br>
+        <hr>
+        <hr>Placement<br>
+        <hr>
+        <hr>Recruitment
+        <br>
+        <hr>
+        <hr>Faculty
+        <hr>
+        <hr><br>News
+        <hr>
+    </div>
+
+    <div class="first">
+        <img src="C:\Users\ADMIN\Downloads\tajmahal.jpg" style="height: 50px;  width: 80px;"></img><br>Arjun
+        Bala<br>B.E.
+        M.Tech(CSE)
+    </div>
+    <div class="second"> <img src="C:\Users\ADMIN\Downloads\tajmahal.jpg"
+            style="height: 50px;  width: 80px;"></img><br>Firoz Shreyayia<br>B.E M.E</div>
+    <br><br><br><br>
+    <div class="New">
+        <div class="three"> <img src="C:\Users\ADMIN\Downloads\tajmahal.jpg"
+                style="height: 50px; width: 80px;"></img><br>Harsh
+            Kansara<br>L&T PVT LTD<br>4.5Lac</div>
+        <div class="four"><img src="C:\Users\ADMIN\Downloads\tajmahal.jpg"
+                style="height: 50px;  width: 80px;"></img><br>Shyam
+            Kansariya<br>Tata Consultancy Service<br>3.2Lac<br></div>
+        <div class="five"><img src="C:\Users\ADMIN\Downloads\tajmahal.jpg"
+                style="height: 50px;  width: 80px;"></img><br>Jeet
+            Dhameesha<br>Reliance Industry LTD<br>5.0Lac</div>
+        <div class="six"><img src="C:\Users\ADMIN\Downloads\tajmahal.jpg"
+                style="height: 50px;  width: 80px;"></img><br>Harsh
+            Maniar<br>Reliance Industry LTD<br>5.0Lac</div>
+        <div class="seven"><img src="C:\Users\ADMIN\Downloads\tajmahal.jpg"
+                style="height: 50px;  width: 80px;"></img><br>Anand
+            Doshi<br>BSNL<br>5.5Lac</div>
+    </div>
+    <div class="Footer">
+        <center>
+            &copy;Darshan University-Rajkot
+        </center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            margin: 15px;
+        }
+
+        .heading {
+            background-color: black;
+            color: white;
+            height: 35px;
+            width: 100%;
+            text-align: center;
+            font-size: x-large;
+            padding-top: 10px;
+        }
+
+        .content {
+            background-image: linear-gradient(to right, rgb(28, 91, 199), rgb(56, 241, 164));
+            height: 650px;
+            width: 100%;
+            padding-top: 15px;
+
+        }
+
+        .parent {
+            position: relative;
+            height: 65px;
+            width: 100%;
+            text-align: center;
+            margin-left: 498px;
+        }
+
+        .write {
+            animation-name: demo;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards;
+            animation-delay: 0.5s;
+            position: absolute;
+
+        }
+
+        @keyframes demo {
+            from {
+                top: 0px;
+
+            }
+
+            to {
+                bottom: 20px;
+            }
+        }
+
+        .feature {
+            height: 325px;
+            width: 97%;
+            margin-left: 45px;
+            margin-right: 45px;
+            margin: 15px;
+            display: inline;
+            float: left;
+        }
+
+        .one {
+            background-color: white;
+            height: 255px;
+            width: 275px;
+            margin: 45px 85px;
+            border-radius: 5%;
+            float: left;
+            text-align: center;
+        }
+
+        .two {
+            background-color: white;
+            height: 255px;
+            width: 275px;
+            margin: 45px 45px;
+            border-radius: 5%;
+            float: left;
+            text-align: center;
+        }
+
+        .three {
+            background-color: white;
+            height: 255px;
+            width: 275px;
+            margin: 45px 0px 0px 65px;
+            border-radius: 5%;
+            float: left;
+            text-align: center;
+        }
+
+        .one:hover {
+            scale: 1.2;
+        }
+
+        .two:hover {
+            scale: 1.2;
+        }
+
+        .three:hover {
+            scale: 1.2;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            width: 105px;
+            height: 35px;
+            padding-top: 5px;
+            margin-left: 625px;
+        }
+
+        button:hover {
+            background-color: orange;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">Welcome to My Modern Web Page</div>
+        <div class="content">
+            <div class="parent">
+                <div class="write" style="color: white; text-align: center; font-size: larger; height: 55px;">Experience
+                    a sleek and responsive design</div>
+            </div>
+            <div class="feature">
+                <div class="one"><img src="https://i.pinimg.com/originals/7b/f2/e8/7bf2e8ab8f412385a637ba3d22d4c00e.gif"
+                        style="height: 150px; width: 85%; margin-top: 10px; border-radius: 15px;"></img><br><br><b>Feature
+                        1</b><br><br> Modern and elegant user Interface</div>
+                <div class="two"><img
+                        src="https://media.istockphoto.com/id/1955715709/vector/responsive-design-laptop-tablet-and-smartphone-screen-icon.jpg?s=612x612&w=0&k=20&c=dHfEhUymdkdDzEs3mQsyXpYZlAO0Va_R5ODbFhVCbuw="
+                        style="border-radius: 45px; height: 125px; width: 85%;"></img><br><br><b>Feature
+                        2</b><br>Responsive layout for all devices</div>
+                <div class="three"><img
+                        src="https://media.gettyimages.com/id/1492332624/video/technology-and-chatbot-robot-icons-background-endless-animation.jpg?s=640x640&k=20&c=RmMVTz_mgdoUk2MOk2IMuum8MYJxXCutMBmC1nW1NTo="
+                        style=" height: 145px; margin-top: 15px; border-radius: 15px;"></img><br><br><b
+                        style="font-weight: 900px;">Feature 3</b><br><br>Beautiful animations and effects</div>
+            </div>
+            <button>Get Started</button>
+        </div>
+    </div>
+</body>
+
+</html>

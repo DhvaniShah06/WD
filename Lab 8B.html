@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8B</title>
+</head>
+<style>
+body{
+   background-image: url(data:image/jpeg;base64,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);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.border{
+    margin: 35px 35px 35px 35px;
+    height: 900px;
+}
+.upper{
+    border: 1px solid black;
+    height: 425px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR30MRrSNV46eVHBytbM0ND8o2zmpih2AiyWg&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lower{
+    border: 1px solid black;
+    height: 500px;
+    background-color: white;
+}
+#search{
+    float: right;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 150px;
+    background-color: white;
+    margin-top: 15px;
+
+}
+#button{
+    border-bottom-right-radius: 15px;
+    float: right;
+    background-color: red;
+    width: 65px;
+    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius:15px;
+    color: white;
+    border: 1px solid white;
+    margin-top: 15px;
+    margin-right: 5px;
+    height: 21px;
+    }
+    #left1{
+        border: 2px solid red;
+        font-weight: 600;
+        color: red;
+        height: 25px;
+        width: 25px;
+        margin-left: 35px;
+        margin-top: 15px;
+        float: left;
+    }
+    nav a{
+        float: left;
+        margin-left: 65px;
+        margin-top: 15px;
+
+    }
+    .nav1{
+        word-spacing: 1px;
+    }
+    #hire{
+        background-color: red;
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius:15px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        width: 75px;
+    }
+     .content{
+        margin-top: 152px;
+        margin-left: 25px;
+     }
+     .Navigation{
+        margin-top: 15px;
+        margin-left: 85px;
+     }
+     .sidebar{
+        float: left;
+        margin-left: 40px;
+        font-size: larger;
+        word-spacing: 5px;
+        height: 150px;
+        width: 180px;
+     }
+     .bold{
+        padding-top: 5px;
+        padding-left: 15px;
+        font-size: 45px;
+        font-weight: 900;
+        margin-top: 30px;
+     }
+     .Info{
+        float: right;
+        margin-left: 250px;
+        height: 70px;
+        margin-top: 25px;
+        font-weight: 800;
+        font-size: 25px;
+        width: 885px;
+     }
+     .Images1{
+        background-color: black;
+        height: 145px;
+        width: 150px;
+        float: left;
+        margin-top: 25px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius:10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        color: white;
+     }
+     
+     .Images2{
+        border-bottom-right-radius: 10px;
+        border-top-right-radius:10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        margin-top: 25px;
+        height: 145px;
+        margin-left: 45px;
+        float: left;
+        width: 150px;
+        background-color: rgb(231, 231, 238) ;
+     }
+     .Images3{
+        border-bottom-right-radius: 10px;
+        border-top-right-radius:10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 145px;
+        width: 150px;
+        float: left;
+        background-color: rgb(231, 231, 238) ;
+        margin-left: 45px;
+        margin-top: 25px;
+
+
+     }
+    .right{
+        height: 290px;
+        float: right;
+        width: 920px;
+        height: 195px;
+        margin-top: 5px;
+    }
+    .adjust{
+        height: 450px;
+        margin-left: 250px;
+    }
+    
+
+    
+</style>
+<body>
+    <div class="border">
+        <div class="upper">
+            <div class="nav">
+                <div id="left1">B</div>
+                <img src="https://www.shutterstock.com/image-vector/border-icon-this-use-admin-260nw-1344879449.jpg" style="height: 25px; float: right; margin-top: 15px; margin-right: 25px;"></img>
+                <input type="button" id="button" value="Search">
+                <input type="search" id="search" placeholder="Enter Keyword...">
+                <nav class="nav1">
+                <a href="" style="text-decoration: none; color: red; margin-top: 15px ; margin-left: 165px;" >Home</a>
+                <a href="" style="text-decoration: none; color: black; margin-left: 15px;" >My Intro</a>
+                <a href="" style="text-decoration: none; color: black; margin-left: 15px;" >Services</a>
+                <a href="" style="text-decoration: none; color: black; margin-left: 15px;" >Pages</a>
+                <a href="" style="text-decoration: none; color: black; margin-left: 15px;" >Contact</a>
+                    </nav>
+            </div>
+            <div class="content">
+                Hi, I'm Mary Ateer
+                <br>
+                <h3>DESIGNER</h3>
+                I love to work in UI/UX designing. I always try my best to make<br> good UI with the best UX.<br>
+                <input type="hire" id="hire" value="Hire Me">
+            </div>
+        </div>
+        <div class="lower">
+            <div class="Navigation">
+                <img src="https://logowik.com/content/uploads/images/paypal-grey7111.logowik.com.webp" style="width: 120px; height: 120px;"></img>
+                <img src="https://images.hindustantimes.com/img/2022/09/11/1600x900/gd_1662870108818_1662870128181_1662870128181.png" style="width: 180px; height: 120px; margin-left: 30px;"></img>
+                <img src="data:image/png;base64,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" style="margin-left: 30px; height: 120px; width: 125px;" ></img>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-l1TPkIl4VX0ijHQxkMihWi-STTuYKRQmw&s" style=" margin-left: 30px; width: 120px; height: 85px;"></img>
+                <img src="https://pngimg.com/d/amazon_PNG28.png" style="width: 185px; margin-left: 30px;"></img>
+            </div>
+             <div class="sidebar"><div class="bold"><b>22</b></div>Years Of Experience <br>Working</div>
+                <div class="adjust">
+             <div class="Info">
+                    I'm a designer & developer with a passion for<br> web design
+                </div><!-- Info complete -->
+                <div class="right">
+                <div class="Images1">
+                    <img src="https://thumbs.dreamstime.com/b/light-bulb-icon-red-background-flat-style-vector-illustration-179115119.jpg" style="height: 25px; width: 30px; border-radius: 50%; margin-top: 50px; margin-left: 15px;"></img>
+                    <br><b style="margin-left: 15px; font-weight: 400;">Creative Design</b><br><small style="padding-left: 15px; margin-bottom : 20px;">Explore More&rarr;</small>
+                </div><!-- Images1 complete -->
+                <div class="Images2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFMY_q0TRg77L6AztgiugfE2MZ0DrGwgMwjA&s" style="height: 40px; width: 45px;margin-left: 25px; margin-top: 50px; border-radius: 50%; "><br>
+                    <b style="margin-left: 15px;">Web Design</b>
+                </div><!-- Images2 complete -->
+                <div class="Images3">
+                <img src="https://thumbs.dreamstime.com/b/web-331552321.jpg" style= "border-radius: 50%; margin-top: 50px; height: 25px; width: 35px; margin-left: 25px; margin-top: px;"></img>
+               <br> <b style="margin-left: 15px;">Brand Identity</b>
+                </div><!-- Images3 complete --> 
+            </div><!-- right complete -->
+            </div>
+        </div> <!-- lower complete -->
+    </div> <!-- body complete -->
+</body>
+</html>

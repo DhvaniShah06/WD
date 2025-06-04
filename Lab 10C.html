@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6C</title>
+    <style>
+        .common {
+            background-color: black;
+            height: 40px;
+            width: 100%;
+            float: left;
+        }
+        .layout {
+            color: greenyellow;
+            width: 150px;
+            height: 370px;
+            padding-top: 75px;
+            float: left;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .empty {
+            height: 450px;
+            float: right;
+            width: 150px;
+            margin-top: 5px;
+        }
+
+        .header {
+            background-color: darkred;
+            height: 40px;
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-right: 0;
+            text-align: center;
+            padding-top: 5px;
+            width: 1053px;
+            float: left;
+            color: white;
+        }
+
+        .nav {
+            float: left;
+            background-color: blue;
+            padding-top: 45px;
+            text-align: center;
+            height: 300px;
+            width: 105px;
+            color: white;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        .content {
+            float: left;
+            background-color: yellow;
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 750px;
+            height: 205px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .sidebar {
+            background-color: green;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            height: 205px;
+            padding-top: 50px;
+            width: 188px;
+            text-align: center;
+            color: white;
+        }
+
+        .yellow {
+            background-color: yellow;
+            float: left;
+            height: 88px;
+            width: 750px;
+            margin-left: 5px;
+        }
+
+        .second {
+            background-color: yellow;
+            margin-top: 5px;
+            float: left;
+            height: 83px;
+            width: 193px;
+        }
+
+        .footer {
+            background-color: lightblue;
+            float: left;
+            margin-left: 5px;
+            margin-top: 5px;
+            text-align: center;
+            color: white;
+            width: 1053px;
+            height: 30px;
+            padding-top: 10px;
+        }
+        @media screen and (max-width : 600px){
+          
+          
+            .footer{
+                margin-top: 5px;
+                width: 92%;
+            }
+            .common{
+                margin-top: 5px;
+                width: 100%;
+            }
+            .header{
+                width: 95%;
+                margin-left: 5px;
+            }
+            .content{
+                width: 45%;
+            }
+            .sidebar{
+                width: 25%;
+                height: 205px;
+            }
+            .yellow{
+                width: 45%;
+                margin-top: 0px;
+            }
+            .second{
+                width: 25%;
+                height: 83px;
+                
+                margin-top: 5px;
+            }
+            .layout{
+                width: 5%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <div class="common"></div>
+        <div class="main">
+            <div class="layout">HTML<br>Website<br>Layout</div>
+            <div class="empty"></div>
+            <div class="body">
+                <div class="header"><b>Header</b></div>
+                <div class="nav"><b>Navigation</b></div>
+                <div class="content"><b>Content</b></div>
+                <div class="sidebar"><b>Sidebar</b></div>
+                <div class="yellow"></div>
+                <div class="second"></div>
+</div><!--body complete-->
+            <div class="footer"><b>Footer</b></div>
+        </div>
+       <div class="common"></div>
+    </div>
+</body>
+
+</html>

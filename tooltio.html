@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        p{
+            margin-top: 25px;
+        }
+        .tooltip{
+            padding: 30px;
+            color: white;
+            background-color: red;
+            position: relative;
+        s
+        
+        .tooltip:hover::after{
+            content: 'This is tooltip';
+            position: absolute;
+            background-color: black;
+            color: white;
+            margin-top: 50px;
+            width: 90%;
+            padding-left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <p>this is <span class="tooltip">Tooltip</span> demo</p>
+</body>
+</html>
